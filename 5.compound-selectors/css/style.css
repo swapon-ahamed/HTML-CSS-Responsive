@@ -1,4 +1,6 @@
-h1, p {
+h1,
+h2,
+p {
     margin-top: 0;
 }
 
@@ -11,17 +13,59 @@ p {
 }
 
 a {
-    color: #FFE600;
+    color: #ffe600;
 }
+header,
+section {
+    padding: 50px;
+}
+header {
+    background: #ffe600;
+    color: black;
+}
+
+.section-one {
+    color: white;
+    background: #000;
+}
+.section-two {
+    color: black;
+    background: white;
+}
+.section-one .btn {
+    background: #ffe600;
+    color: black;
+    font-weight: bold;
+}
+.section-one .btn:hover {
+    background: orange;
+}
+
+.section-two .btn {
+    background: #000;
+    color: white;
+    font-weight: bold;
+}
+.section-two .btn:hover {
+    background: orange;
+}
+
+
 
 .accent-color {
-    color: #FFE600;
+    color: #ffe600;
 }
 
-.card-importants-notes{
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.card-importants-notes {
     background: #c7c4c4;
     border: 1px dotted #000;
     margin: 100px auto;
     width: 560px;
-    padding: 45px;;
+    padding: 45px;
 }
