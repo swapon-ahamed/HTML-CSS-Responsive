@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="card-importants-notes">
+            <h2>Media Query: Basic Syntacs:</h2>
+            <p>@media () {...}</p>
+            <p>@media <strong>media-type</strong> () {...}</p>
+            <p>@media <strong>media-type</strong> and (media-features) {...}</p>
+            <p>The media type let's us target different types of media.</p>
+            <ul>
+                <li>Scren @medai screen {...}</li>
+                <li>Print @medai print {...}</li>
+                <li>Speech @medai speech {...}</li>
+            </ul>
+
+            <p>
+                The <strong>media condition</strong> let's us target specific
+                conditions within that media type.
+            </p>
+
+            <ul>
+                <li>Widths @media (min-width:600px) { ... }</li>
+                <li>Orientation @media (orientation: landscape) { ... }</li>
+                <li>Specefic features @media (hover) { ... }</li>
+            </ul>
+            <em
+                ><strong
+                    >Both media types and conditions are optional <br />
+                    We d need to either have a type or condition though.
+                </strong></em
+            >
+
+            <h2>Example: Target only screen</h2>
+            <p>@media screen { ... }</p>
+            <h3>Width of viewport</h3>
+            <p>@media (min-width:960px) { ... }</p>
+            <h3>
+                Combine a type with condition by using
+                <strong><em>and</em></strong>
+            </h3>
+            <p>@media screen and (min-width: 960px) { ... }</p>
+            <p>@media screen and (orientation:portrait) { ... }</p>
+        </div>
+        <style>
+            .card-importants-notes {
+                background: #c7c4c4;
+                border: 1px dotted #000;
+                margin: 0px auto;
+                width: 560px;
+                padding: 45px;
+            }
+        </style>
+    </body>
+</html>

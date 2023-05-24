@@ -1,30 +1,63 @@
-
-body{
+body {
     margin: 0px;
     color: #707070;
     font-size: 1.125rem;
 }
 /* Typography  */
-h1{
+h1 {
     font-size: 3rem;
     color: #212614;
+    
 }
-h1{
+h1 {
     font-size: 1.5rem;
 }
 h1 span {
     color: #b7832f;
 }
+p {
+    margin-top: 0px;
+}
 
 /* Layout  */
-img{
+img {
     max-width: 100%;
 }
-.container{
-    width: 90%;
+.container {
+    width: 95%;
     max-width: 980px;
     margin: 0 auto;
+
 }
-.columns{
-    display:flex;
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+.col {
+}
+.col-1 {
+    width: 20%;
+}
+.col-2 {
+    width: 45%;
+}
+.col-3 {
+    width: 70%;
+}
+.col-bg {
+    background: #212614;
+    padding: 1em;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .columns{
+        flex-direction:column;
+    }
+    .col-1,
+    .col-2,
+    .col-3{
+        width: 100%;
+    }
 }
