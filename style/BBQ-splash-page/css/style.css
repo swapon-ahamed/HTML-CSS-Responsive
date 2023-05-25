@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: white;
+    margin:0;
+}
+h1 + p {
+    color: #ff713b;
+    font-weight: 900;
+    font-size: 1.3125;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    color: #ff713b;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.top-text {
+    font-size: 0.625rem;
+    font-weight: 900;
+    color: #ff713b;
+    text-transform: uppercase;
+    order: -1;
+}
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/* =================
+   Intro section 
+   ================= */
+.intro {
+    background: #404040;
+    background-image: url(../images/bbq.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 0.5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* =================
+   main-content section 
+   ================= */
+.main-content {
+    padding: 2em 1em;
+}
+
+/* =================
+   media query
+   ================= */
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .intro, .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Viewport units and Box sizing!</title>
+    </head>
+    <body>
+        <div class="card-importants-notes">
+            <h1>Viewport</h1>
+           <img src="images/viewport-units-0.png" width="100%" alt="">
+           <img src="images/viewport-units-1.png" width="100%" alt="">
+           <img src="images/viewport-units-2.png" width="100%" alt="">
+
+           <h1>Box Sizing</h1>
+           <p>The CSS box-sizing property allows us to include the padding and border in an element's total width and height.</p>
+           <h2>Without the CSS box-sizing Property</h2>
+           <p>By default, the width and height of an element is calculated like this:</p>
+           <p> <strong>width + padding + border = actual width of an element</strong> </p>
+           <p> <strong>height + padding + border = actual height of an element</strong> </p>
+           <p>This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).</p>
+            <h2>Examples:</h2>
+            <img src="images/box-sizing-1.png" alt="" width="100%">
+            <img src="images/box-sizing-2.png" alt="" width="100%">
+        </div>
+
+        <style>
+            p {
+                font-size: 18px;
+            }
+            .card-importants-notes {
+                background: #fff;
+                border: 1px dotted #000;
+                margin: 100px auto;
+                width: 560px;
+                padding: 45px;
+            }
+        </style>
+    </body>
+</html>
