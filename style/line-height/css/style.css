@@ -73,6 +73,7 @@ strong {
 .article-info {
     font-size: 0.875rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .article-read-more {
@@ -92,7 +93,8 @@ strong {
 .widget-title,
 .widget-recent-post-title{
     font-size: 1rem;
-    line-height: 1.3
+    line-height: 1.3;
+    letter-spacing: 2px;
 }
 .widget-title {
     font-family: 'Ubuntu', sans-serif;
@@ -164,6 +166,8 @@ nav a {
     color: #707070;
     font-weight: 700;
     padding: 0.25em 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;;
 }
 
 nav a:hover,
