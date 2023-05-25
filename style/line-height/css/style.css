@@ -61,6 +61,8 @@ strong {
     color: #1792d2;
     font-size: 0.75rem;
     margin: 0;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .article-title {
@@ -70,6 +72,7 @@ strong {
 .article-read-more,
 .article-info {
     font-size: 0.875rem;
+    text-transform: uppercase;
 }
 
 .article-read-more {
