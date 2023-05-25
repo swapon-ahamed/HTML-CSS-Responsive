@@ -6,7 +6,7 @@ font-family: 'Ubuntu', sans-serif;
 
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
 }
@@ -15,12 +15,13 @@ body {
 Typography
 ================= */
 
-h1, 
+h1,
 h2,
 h3 {
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-weight: 400;
     color: #143774;
+    margin-top: 0;
 }
 img {
     width: 100%;
@@ -43,12 +44,11 @@ strong {
     font-weight: 700;
 }
 
-
 /* h1 subtitle */
 .subtitle {
     font-weight: 700;
     color: #1792d2;
-    font-size: .75rem;
+    font-size: 0.75rem;
     margin: 0;
 }
 
@@ -58,7 +58,7 @@ strong {
 
 .article-read-more,
 .article-info {
-    font-size: .875rem;
+    font-size: 0.875rem;
 }
 
 .article-read-more {
@@ -72,8 +72,9 @@ strong {
     color: #143774;
     text-decoration: underline;
 }
-
-
+.article-info {
+    margin: 2rem 0;
+}
 
 /* =================
 Layout
@@ -95,14 +96,14 @@ header {
     background: #f8f8f8;
     padding: 2em 0;
     text-align: center;
+    margin-bottom: 3em;
 }
-
 
 @media (min-width: 675px) {
     .container-flex {
         flex-direction: row;
     }
-    main{
+    main {
         width: 75%;
     }
     aside {
@@ -127,7 +128,7 @@ nav a {
     text-decoration: none;
     color: #707070;
     font-weight: 700;
-    padding: .25em 0;
+    padding: 0.25em 0;
 }
 
 nav a:hover,
@@ -147,8 +148,53 @@ nav a:focus {
     nav ul {
         flex-direction: column;
     }
-    
+
     nav li {
-        margin: .5em 0;
+        margin: 0.5em 0;
+    }
+}
+
+/* articles  */
+.article-featured {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.article-recent {
+    display: flex;
+    flex-direction: column;
+}
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-recent-main {
+        width: 68%;
+    }
+    
+    .article-recent-secondary {
+        width: 30%;
+    }
+    .article-featured{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-image{
+        order: -2;
+        width: 100%;
+        object-fit: cover;
+        min-height: 250px;
+    }
+    .article-info{
+        order: -1;
     }
 }
