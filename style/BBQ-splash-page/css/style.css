@@ -96,17 +96,24 @@ strong {
 /* =================
    form
    ================= */
-   
+  
    .email-collector {
     width: 80%;
     max-width: 300px;
-    margin: 1.25 em auto;
 }
 
 input,
 .btn {
     width: 100%;
     border-radius: 5px;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .25em;
+    border: 1px solid #404040;
 }
 
 .btn {
@@ -121,16 +128,15 @@ input,
 }
 
 .btn-primary {
-    background-color: #404040;
+    background-image: linear-gradient(to left, #FF713B, #FFA51D);
     color: white;
-    transition: background-color 250ms;
-
+    transform: scale(1);
+    transition: transform 250ms;
 }
 
 .btn-primary:hover {
-    background-color: #F18119;
+    transform: scale(1.1);
 }
-
 /* =================
    media query
    ================= */
